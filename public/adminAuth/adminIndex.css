@@ -1,0 +1,338 @@
+#logoutLink {
+    font-weight: 900;
+}
+
+#preview {
+    display: inline-block;
+    margin-left: 35px;
+    width: 375px;
+    height: 450px;
+    border: 1px solid black;
+    overflow: hidden;
+}
+
+#previewImage {
+    margin: 10px;
+    margin-left: 5%;
+    margin-right: 5%;
+    border-radius: 50%;
+    width: 300px;
+    height: 225px;
+}
+
+#previewType {
+    color: darkgreen;
+    text-align: center;
+    width: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 12px;
+    letter-spacing: .1em;
+    word-spacing: 2.5px;
+    line-height: 17.5px;
+}
+
+#previewDesc {
+    color: darkgreen;
+    text-align: center;
+    width: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 8px;
+    letter-spacing: .1em;
+    word-spacing: 2.5px;
+    line-height: 17.5px;
+}
+
+#previewName {
+    text-align: center;
+    margin: 25px auto 10px auto;
+    width: 100%;
+    font-family: cursive;
+    font-size: 15px;
+    text-transform: capitalize;
+    color: rgb(38, 99, 17);
+    word-spacing: -2.5px;
+    line-height: 17.5px;
+}
+
+#addContainer {
+    width: 350px;
+    clear: both;
+    margin: 0 auto;
+}
+
+#addForm {
+    margin: 25px
+}
+
+input {
+    width: 100px;
+    clear: both;
+    text-align: right;
+    height: 20px;
+}
+
+label {
+    float: left;
+    text-align: right;
+    width: 100px;
+    font-family: cursive;
+    font-size: 16px;
+    text-transform: capitalize;
+    color: rgb(38, 99, 17);
+    word-spacing: -2.5px;
+}
+
+ input, textarea {
+    text-align: left;
+    width: 175Px;
+    margin: 2.5px;
+}
+
+.error {
+    color: red;
+    font-size: 8pt;
+
+}
+/* CSS FOR ARTICLES */
+#articlesContainer {
+    text-align: center;
+}
+
+#articles {
+    display: inline-block;
+    width: 850px;
+}
+
+.article {
+    cursor: pointer;
+    margin: 10px;
+    width: 250px;
+    height: 300px;
+    border: 1px solid black;
+    float: left;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+ 
+.articleImage {
+    margin: 10px;
+    margin-left: 5%;
+    margin-right: 5%;
+    border-radius: 50%;
+    width: 200px;
+    height: 150px;
+}
+
+.articleName {
+    text-align: center;
+    margin: 25px auto 10px auto;
+    width: 100%;
+    font-family: cursive;
+    font-size: 15px;
+    text-transform: capitalize;
+    color: rgb(38, 99, 17);
+    word-spacing: -2.5px;
+    line-height: 17.5px;
+}
+
+.articleDesc {
+    color: darkgreen;
+    text-align: center;
+    width: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 8px;
+    letter-spacing: .1em;
+    word-spacing: 2.5px;
+    line-height: 17.5px;
+}
+/* END CSS FOR ARTICLES */
+
+/* CSS FOR ABOUTS */
+#aboutsContainer {
+    text-align: center;
+}
+
+#abouts {
+    display: inline-block;
+    width: 850px;
+}
+
+.about {
+    cursor: pointer;
+    margin: 10px;
+    width: 250px;
+    height: 300px;
+    border: 1px solid black;
+    float: left;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+ 
+.aboutImage {
+    margin: 10px;
+    margin-left: 5%;
+    margin-right: 5%;
+    border-radius: 50%;
+    width: 200px;
+    height: 150px;
+}
+
+.aboutName {
+    text-align: center;
+    margin: 25px auto 10px auto;
+    width: 100%;
+    font-family: cursive;
+    font-size: 15px;
+    text-transform: capitalize;
+    color: rgb(38, 99, 17);
+    word-spacing: -2.5px;
+    line-height: 17.5px;
+}
+
+.aboutDesc {
+    color: darkgreen;
+    text-align: center;
+    width: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 8px;
+    letter-spacing: .1em;
+    word-spacing: 2.5px;
+    line-height: 17.5px;
+}
+/* END CSS FOR ABOUTS */
+
+/* CSS FOR MENUITEMS */
+#previewMI {
+    display: inline-block;
+    width: 200px;
+    height: 300px;
+    margin-left: 35px;
+    border: 1px solid black;
+    overflow: hidden;
+}
+
+#previewImageMI {
+    margin: 10px;
+    width: 100px;
+    height: 150px;
+    margin-left: 5%;
+    margin-right: 5%;
+    border-radius: 15px;
+}
+
+
+#selectDiv {
+    margin-bottom: -10pt;
+}
+
+ select{
+    text-align: left;
+    width: 175Px;
+    margin: 2.5px;
+}
+
+#menuItemsContainer {
+    text-align: center;
+}
+
+#menuItemType {
+    color: darkgreen;
+    text-align: center;
+    width: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    letter-spacing: .1em;
+    word-spacing: 2.5px;
+    margin-bottom: 10px;
+}
+
+.arrows {
+    display: inline-block;
+}
+
+#left, #right {
+    width: 15px;
+}
+
+#menuItems {
+    display: inline-block;
+    width: 850px;
+}
+
+.menuItem {
+    cursor: pointer;
+    margin: 10px;
+    width: 175px;
+    height: 300px;
+    border: 1px solid black;
+    float: left;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+ 
+.menuItemImage {
+    margin: 10px;
+    width: 100px;
+    height: 150px;
+    margin-left: 5%;
+    margin-right: 5%;
+    border-radius: 15px;
+    max-width: 600px;
+}
+
+.menuItemName {
+    text-align: center;
+    margin: 25px auto 10px auto;
+    width: 100%;
+    font-family: cursive;
+    font-size: 15px;
+    text-transform: capitalize;
+    color: rgb(38, 99, 17);
+    word-spacing: -2.5px;
+    line-height: 17.5px;
+}
+
+.menuItemDesc {
+    color: darkgreen;
+    text-align: center;
+    width: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 8px;
+    letter-spacing: .1em;
+    word-spacing: 2.5px;
+    line-height: 17.5px;
+}
+/* END CSS FOR MENUITEMS */
+
+/* CSS FOR LOGIN */
+
+#loginDiv {
+    display: inline-block;
+    width: 250px;
+}
+
+#loginDiv label{
+    display: block;
+    float: none;
+    width: 100px;
+}
+
+#loginDiv input{
+    float: none;
+}
+
+#submit {
+    margin: 10px;
+}

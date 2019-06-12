@@ -1,0 +1,33 @@
+<div id="container">
+    <div id="preview">
+        <img id="previewImage" />
+        <div id="previewName"></div>
+        <img class="dividerImage" src="../resources/divider.png" />
+        <div id="previewDesc">
+        </div>
+    </div>
+    <div id="addContainer">
+        <form id="addForm">
+            <div id="formDiv">
+                <span id="validateName" class="error"></span>
+                <label for="addName" class="title">Name</label>
+                <input class="input" type="text" id="addName" name="addName" />
+                <br />
+                <span id="validateImage" class="error"></span>
+                <label for="addImage" class="title">Image</label>
+                <input class="input" type="file" id="addImage" name="addImage" />
+                <br />
+                <span id="validateDesc" class="error"></span>
+                <label for="addDesc" class="title">Description</label>
+                <textarea class="input" id="addDesc" name="addDesc"></textarea>
+                <br />
+                <button id="submit" name="submit" type="submit" class="submit">submit</button>
+            </div>
+        </form>
+    </div>
+    <hr />
+    <div id="articlesContainer">
+        <div id="articles">
+        </div>
+    </div>
+</div>

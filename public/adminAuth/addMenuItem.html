@@ -1,0 +1,51 @@
+<div id="container">
+    <div id="previewMI">
+
+            <div id="previewName"></div>
+            <div id="previewType"></div>
+            <img id="previewImageMI" />
+            <div id="previewDesc"></div>
+
+    </div>
+    <div id="addContainer">
+        <form id="addForm">
+            <div id="formDiv">
+                <span id="validateType" class="error"></span>
+                <label for="addType" class="title">Type</label>
+                <div id="selectDiv">
+                    <select id="addType" name="type" class="input">
+                        <option value="" selected disabled hidden>Select Type</option>
+                        <option value="Drink">Drink</option>
+                        <option value="Dessert">Dessert</option>
+                        <option value="Sandwich">Sandwich</option>
+                    </select>
+                </div>
+                <br />
+                <span id="validateName" class="error"></span>
+                <label for="addName" class="title">Name</label>
+                <input class="input" type="text" id="addName" />
+                <br />
+                <span id="validateImage" class="error"></span>
+                <label for="addImage" class="title">Image</label>
+                <input class="input" type="file" id="addImage" />
+                <br />
+                <span id="validateDesc" class="error"></span>
+                <label for="addDesc" class="title">Description</label>
+                <textarea class="input" id="addDesc"></textarea>
+                <br />
+                <button type="submit" class="submit">submit</button>
+            </div>
+        </form>
+    </div>
+    <hr />
+    <div id="menuItemsContainer">
+        <div id="menuItemType"></div>
+        <div class="arrows">
+            <img id="left" src="../resources/left.png" />
+            &nbsp&nbsp&nbsp
+            <img id="right" src="../resources/right.png" />
+        </div>
+        <div id="menuItems">
+        </div>
+    </div>
+</div>

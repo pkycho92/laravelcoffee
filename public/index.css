@@ -1,0 +1,356 @@
+/* Shared */
+
+html {
+    overflow-y: scroll;
+    background-color: #faf5e7;
+}
+
+#page {
+    width: 810px;
+    margin: 10px auto 10px auto;
+    padding: 20px;
+    background-color: #faf5e7;
+    text-align: center;
+}
+
+#navbar {
+    font-family: Helvetica, Arial;
+    font-size: 16px;
+    text-transform: capitalize;
+    letter-spacing: .1em;
+    display: block;
+}
+
+#dropMenu {
+    overflow-y: hidden;
+    max-height: 0px;
+    -webkit-transition: all .35s linear;
+    -moz-transition: all .35s linear;
+    -o-transition: all .35s linear;
+    transition: all .35s linear;
+}
+
+#dropMenu.show {
+    max-height: 160px;
+}
+
+#logo {
+    cursor: pointer;
+}
+
+#settings {
+    float: left;
+    display: block;
+    cursor: pointer;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    display: inline-block;
+    margin: 5px;
+    cursor: pointer;
+    color: rgb(38, 99, 17)
+}
+
+.hidden {
+    display: none;
+}
+
+.container {
+    width: 90%;
+}
+
+.articleHead {
+    text-align: center;
+    margin: 25px auto 10px auto;
+    width: 100%;
+    font-family: cursive;
+    font-size: 30px;
+    text-transform: capitalize;
+    color: rgb(38, 99, 17);
+    word-spacing: -2.5px;
+    line-height: 35px
+}
+
+.articleBody {
+    color: darkgreen;
+    text-align: center;
+    width: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 16px;
+    letter-spacing: .1em;
+    word-spacing: 5px;
+    line-height: 35px;
+}
+
+.storeImage {
+    cursor: pointer;
+    width: 600px;
+    height: 400px;
+    margin-left: 5%;
+    margin-right: 5%;
+    border-radius: 50%;
+}
+
+.dividerImage {
+    width: 50px;
+}
+
+.divider {
+    font-size: 24;
+    letter-spacing: 10px;
+    color: rgb(38, 99, 17);
+}
+
+.activeArticle {
+    -webkit-animation: fadein 1s;
+    -moz-animation: fadein 1s;
+    -ms-animation: fadein 1s;
+    -o-animation: fadein 1s;
+    animation: fadein 1s;
+}
+
+.activeButton {
+    opacity: .25;
+}
+
+/* End - Shared */
+
+/* End CSS for Contact*/
+
+#map {
+    width: 100%;
+    height: 400px;
+    background-color: grey;
+}
+
+#contact {
+    color: darkgreen;
+    text-align: center;
+    width: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 22px;
+    letter-spacing: .1em;
+    word-spacing: 5px;
+    line-height: 35px;
+}
+
+/* End CSS for Contact*/
+
+/* CSS for Menu Item*/
+
+#menuItemType {
+    color: darkgreen;
+    text-align: center;
+    width: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    letter-spacing: .1em;
+    word-spacing: 2.5px;
+    margin-bottom: 10px;
+}
+
+.arrows {
+    display: inline-block;
+}
+
+#left, #right {
+    width: 15px;
+}
+
+.menuItem {
+    cursor: pointer;
+    margin: 10px;
+    width: 175px;
+    height: 300px;
+    border: 1px solid black;
+    float: left;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.menuItemImage {
+    margin: 10px;
+    width: 100px;
+    height: 150px;
+    margin-left: 5%;
+    margin-right: 5%;
+    border-radius: 15px;
+    max-width: 600px;
+}
+
+.menuItemName {
+    text-align: center;
+    margin: 25px auto 10px auto;
+    width: 100%;
+    font-family: cursive;
+    font-size: 15px;
+    text-transform: capitalize;
+    color: rgb(38, 99, 17);
+    word-spacing: -2.5px;
+    line-height: 17.5px;
+}
+
+.menuItemDesc {
+    color: darkgreen;
+    text-align: center;
+    width: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 8px;
+    letter-spacing: .1em;
+    word-spacing: 2.5px;
+    line-height: 17.5px;
+}
+
+#right, #left {
+    cursor: pointer;
+}
+
+/* End CSS for Menu Item*/
+
+/* CSS for Chat */
+
+#chatLog {
+    width: 50em;
+    height: 25em;
+}
+
+#users {
+    width: 20em;
+    height: 25em;
+}
+
+.chatName {
+    color: darkgreen;
+    text-align: center;
+    width: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 12px;
+    letter-spacing: .1em;
+    word-spacing: 2.5px;
+    line-height: 17.5px;
+}
+
+#chatInput {
+    margin: 15px;
+}
+
+#error {
+    color: red;
+    font-size: 12px;
+    letter-spacing: .1em;
+    word-spacing: 2.5px;
+    line-height: 17.5px;
+}
+
+#textField {
+    width: 362.5px;
+    margin: 17.5px;
+}
+
+.chatPre {
+    word-wrap: break-word;
+}
+
+#send {
+    margin: 15px;
+    width: 100px;
+    height: 15px;
+}
+
+/* CSS for Error Page */
+
+.errorPage {
+    color: darkgreen;
+    text-align: center;
+    width: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 16px;
+    letter-spacing: .1em;
+    word-spacing: 2.5px;
+    line-height: 17.5px;
+    cursor: pointer;
+}
+
+/* End CSS for Error Page */
+
+/* CSS FOR LOGIN */
+
+#loginDiv {
+    display: inline-block;
+    width: 275px;
+    text-align: right;
+    margin-right: 75px;
+}
+
+#loginDiv label {
+    width: 100px;
+    text-align: right;
+    font-family: cursive;
+    font-size: 16px;
+    text-transform: capitalize;
+    color: rgb(38, 99, 17);
+    word-spacing: -2.5px;
+}
+
+#loginDiv input {
+    float: none;
+}
+
+#submit {
+    margin: 10px;
+}
+
+/* End CSS FOR LOGIN */
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@-ms-keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
