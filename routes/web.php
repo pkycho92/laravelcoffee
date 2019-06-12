@@ -29,7 +29,11 @@ Route::get('/admin', function () {
 
 Route::match(array('PATCH'), '/abouts/{id}', 'AboutController@update');
 
-Route::match(array('PATCH'), '/articles/{id}', 'AboutController@update');
+Route::match(array('PATCH'), '/articles/{id}', 'ArticleController@update');
+
+Route::match(array('PATCH'), '/menuItems/{id}', 'MenuItemController@update');
+
+Route::match(array('GET'), '/menuItems/types/{type}', 'MenuItemController@index');
 
 Route::resource('articles', 'ArticleController');
 

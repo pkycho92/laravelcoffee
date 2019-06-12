@@ -23,7 +23,7 @@
     let username;
 
     join.addEventListener("click", (e) => {
-        if(textField.value == "") {
+        if (textField.value == "") {
             error.textContent = "Username must be greater than 0";
             return false;
         }
@@ -44,7 +44,7 @@
         }
     })
 
-    let wsUri = "ws://34.205.184.226/chat"
+    let wsUri = 'ws://localhost:6001';
     let websocket = new WebSocket(wsUri);
 
 
@@ -73,4 +73,7 @@
             chatLog.innerHTML += e.data + "\n";
         }
     }
+    Echo.channel('home')
+        .listen('NewMessage', onMessage);
+
 }());

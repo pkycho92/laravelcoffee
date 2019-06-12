@@ -12,73 +12,36 @@ class MenuItemController extends Controller
      *
      * @return Response
      */
-    public function index()
+    public function index($type)
     {
-        return MenuItem::all();
-     }
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return Response
-     */
-    public function create()
-    {
-        //
+        return MenuItem::orderBy('position', 'ASC')->get()->filter(function ($item) use ($type){
+
+            return ($item->type == $type) ? true : false;
+        });
     }
 
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @return Response
-     */
-    public function store()
+    public function store(Request $request)
     {
-        //
+        MenuItem::create($request->json->all());
+        return response()->setStatusCode(201);
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  int  $id
-     * @return Response
-     */
     public function show($id)
     {
-        //
+        return MenuItem::find($id);
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  int  $id
-     * @return Response
-     */
-    public function edit($id)
+    public function update($id, Request $request)
     {
-        //
+        MenuItem::save($request->json->all());
     }
 
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  int  $id
-     * @return Response
-     */
-    public function update($id)
-    {
-        //
-    }
-
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  int  $id
-     * @return Response
-     */
     public function destroy($id)
     {
-        //
+        $menuItem = MenuItem::find($id);
+        $menuItem -> delete();
     }
 
 }
+

@@ -10,9 +10,8 @@
     menuItemType.textContent = currentType
     let rightArrow = document.getElementById("right");
     let leftArrow = document.getElementById("left");
-
+    let pos = menuItemsType.indexOf(currentType);
     rightArrow.addEventListener("click", (e) => {
-        let pos = menuItemsType.indexOf(menuItemType.textContent);
         if (pos == 2) {
             pos = 0;
         } else {
@@ -20,11 +19,11 @@
         }
         currentType = menuItemsType[pos];
         menuItemType.textContent = currentType;
+        pos = menuItemsType.indexOf(currentType);
         getMenuItems();
     })
 
     leftArrow.addEventListener("click", (e) => {
-        let pos = menuItemsType.indexOf(menuItemType.textContent);
         if (pos == 0) {
             pos = 2;
         } else {
@@ -32,6 +31,7 @@
         }
         currentType = menuItemsType[pos];
         menuItemType.textContent = currentType;
+        pos = menuItemsType.indexOf(currentType);
         getMenuItems();
     })
 
@@ -52,9 +52,11 @@
         let xhr = new XMLHttpRequest();
         xhr.onload = () => {
             menuItemsJSON = (JSON.parse(xhr.responseText));
+            menuItemsJSON = Object.values(menuItemsJSON);
             loadMenuItems();
+
         }
-        xhr.open("GET", "/menuItems/types/" + currentType.toUpperCase());
+        xhr.open("GET", "/menuItems/types/" + pos);
         xhr.setRequestHeader("Content-Type", "application/json");
         xhr.send();
     }
