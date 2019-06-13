@@ -16,8 +16,7 @@ class AboutController extends Controller
 
     public function store(Request $request)
     {
-        About::create($request->json->all());
-        return response()->setStatusCode(201);
+        About::create($request->json()->all());
     }
 
     public function show($id)

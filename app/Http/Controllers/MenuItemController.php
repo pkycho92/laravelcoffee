@@ -23,8 +23,7 @@ class MenuItemController extends Controller
 
     public function store(Request $request)
     {
-        MenuItem::create($request->json->all());
-        return response()->setStatusCode(201);
+        MenuItem::create($request->json()->all());
     }
 
     public function show($id)

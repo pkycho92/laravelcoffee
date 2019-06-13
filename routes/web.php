@@ -15,6 +15,8 @@ Route::get('/', function () {
     return view('index');
 });
 
+Route::post('/admin', 'LoginController@authenticate');
+
 Route::get('/index', function () {
     return view('index');
 });
@@ -26,6 +28,11 @@ Route::get('/error', function () {
 Route::get('/admin', function () {
     return view('login');
 });
+
+Route::get('/logout', function () {
+    return view('login');
+});
+
 
 Route::match(array('PATCH'), '/abouts/{id}', 'AboutController@update');
 
@@ -40,3 +47,7 @@ Route::resource('articles', 'ArticleController');
 Route::resource('abouts', 'AboutController');
 
 Route::resource('menuItems', 'MenuItemController');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

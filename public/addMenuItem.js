@@ -18,9 +18,8 @@
     menuItemType.textContent = menuItemsType[0];
     let rightArrow = document.getElementById("right");
     let leftArrow = document.getElementById("left");
-
+    let pos = menuItemsType.indexOf(menuItemType.textContent);
     rightArrow.addEventListener("click", (e) => {
-        let pos = menuItemsType.indexOf(menuItemType.textContent);
         if (pos == 2) {
             pos = 0;
         } else {
@@ -31,7 +30,6 @@
     })
 
     leftArrow.addEventListener("click", (e) => {
-        let pos = menuItemsType.indexOf(menuItemType.textContent);
         if (pos == 0) {
             pos = 2;
         } else {
@@ -50,6 +48,7 @@
         typeError.textContent = "";
         previewType.textContent = addType.value;
         menuItemType.textContent = addType.value;
+        pos = menuItemsType.indexOf(addType.value)
         getMenuItems();
     })
 
@@ -80,7 +79,7 @@
         };
         reader.onload = function (e) {
             body.name = addName.value;
-            body.type = addType.value.toUpperCase();
+            body.type = menuItemsType.indexOf(addType.value);
             body.image = e.target.result;
             body.description = addDesc.value;
             body.position = document.getElementsByClassName('delete').length;
@@ -120,6 +119,7 @@
         let xhr = new XMLHttpRequest();
         xhr.onload = () => {
             menuItemsJSON = (JSON.parse(xhr.responseText));
+            menuItemsJSON = Object.values(menuItemsJSON);
             for (let i = 0; i < menuItemsJSON.length; i++) {
                 menuItemsHtml += "<div id='menuItem" + menuItemsJSON[i].id + "' class='menuItem'>";
                 menuItemsHtml += "<img src='" + menuItemsJSON[i].image + "' class='menuItemImage' />";
@@ -136,7 +136,7 @@
             }
             addListeners();
         };
-        xhr.open("GET", "/menuItems/types/" + menuItemType.textContent.toUpperCase());
+        xhr.open("GET", "/menuItems/types/" + pos);
         xhr.setRequestHeader("Content-Type", "application/json");
         xhr.send();
     }

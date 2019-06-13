@@ -1,5 +1,5 @@
 <head>
-    <link href="../index.css" type="text/css" rel="stylesheet" />
+    <link href="index.css" type="text/css" rel="stylesheet" />
     <link href="adminIndex.css" type="text/css" rel="stylesheet" />
 </head>
 
@@ -7,9 +7,9 @@
     <div id="page">
         <div id="bar"></div>
         <header>
-            <h1><img id="logo" src="../resources/logo.png" width="300" height="75" /></h1>
+            <h1><img id="logo" src="resources/logo.png" width="300" height="75" /></h1>
             <div id="navbar">
-                <img id="settings" src="../resources/settings.png" width="15" height="15" />
+                <img id="settings" src="resources/settings.png" width="15" height="15" />
                 <br />
                 <hr />
                 <div id="dropMenu">
@@ -27,7 +27,7 @@
                 <div id="preview">
                     <img id="previewImage" />
                     <div id="previewName"></div>
-                    <img class="dividerImage" src="../resources/divider.png" />
+                    <img class="dividerImage" src="resources/divider.png" />
                     <div id="previewDesc">
                     </div>
                 </div>

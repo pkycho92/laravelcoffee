@@ -11,7 +11,8 @@
         <section id="main">
             <div id="container">
                 <div id="loginDiv">
-                    <form name="login" id="login" action="/login.html" method="POST">
+                    <form name="login" id="login" action="/admin" method="POST">
+                        @csrf
                         <div id="formDiv">
                             <label for="addUsername" class="title">Usesrname</label>
                             <span id="validateUsername" class="error"></span>

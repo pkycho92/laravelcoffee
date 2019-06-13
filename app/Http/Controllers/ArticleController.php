@@ -16,8 +16,7 @@ class ArticleController extends Controller
 
     public function store(Request $request)
     {
-        Article::create($request->json->all());
-        return response()->setStatusCode(201);
+        Article::create($request->json()->all());
     }
 
     public function show($id)
