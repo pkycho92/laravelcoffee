@@ -33,7 +33,9 @@ class MenuItemController extends Controller
 
     public function update($id, Request $request)
     {
-        MenuItem::save($request->json->all());
+        $menuItem = MenuItem::find($id);
+        $menuItem->position = $request->position;
+        $menuItem->save();
     }
 
     public function destroy($id)

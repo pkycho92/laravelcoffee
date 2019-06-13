@@ -26,7 +26,9 @@ class AboutController extends Controller
 
     public function update($id, Request $request)
     {
-        About::save($request->json->all());
+        $about = About::find($id);
+        $about->position = $request->position;
+        $about->save();
     }
 
     public function destroy($id)

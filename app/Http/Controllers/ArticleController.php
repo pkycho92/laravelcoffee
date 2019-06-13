@@ -26,7 +26,9 @@ class ArticleController extends Controller
 
     public function update($id, Request $request)
     {
-        Article::save($request->json->all());
+        $article = Article::find($id);
+        $article->position = $request->position;
+        $article->save();
     }
 
     public function destroy($id)

@@ -168,9 +168,11 @@
                     xhr2.onload = getArticles;
                     xhr2.open("PATCH", "/articles/" + secondId.slice(7));
                     xhr2.setRequestHeader("Content-Type", "application/json");
+                    console.log(JSON.stringify(secondObj),secondId);
                     xhr2.send(JSON.stringify(secondObj));
                 }
                 xhr.open("PATCH", "/articles/" + firstId.slice(7));
+                console.log(JSON.stringify(firstObj),firstId);
                 xhr.setRequestHeader("Content-Type", "application/json");
                 xhr.send(JSON.stringify(firstObj));
             }
